@@ -7,7 +7,7 @@ option = timestamp % 2
 if (option == 0) {
     videoSource.src = 'bgv2.mp4';  // Positive timestamp -> bgv3.mp4
 } else {
-    videoSource.src = 'bgv2.mp4';  // Negative timestamp -> bgv2.mp4
+    videoSource.src = 'bgv3.mp4';  // Negative timestamp -> bgv2.mp4
 }
 
 // Reload the video to reflect the change in the source
