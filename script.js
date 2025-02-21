@@ -3,7 +3,12 @@ const timestamp = new Date().getTime();
 
 // Check if timestamp is positive or negative and change the video source
 const videoSource = document.getElementById('video-source');
-videoSource.src = 'bgv2.mp4';
+option = timestamp % 2
+if (option == 0) {
+    videoSource.src = 'bgv3.mp4';  // Positive timestamp -> bgv3.mp4
+} else {
+    videoSource.src = 'bgv2.gif';  // Negative timestamp -> bgv2.mp4
+}
 
 // Reload the video to reflect the change in the source
 const video = document.getElementById('bg-video');
