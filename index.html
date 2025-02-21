@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Asif Hasan - Portfolio</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
@@ -38,30 +39,43 @@
 
     <!-- Full Page Background Video -->
     <div class="bg-container">
-        <img src="bgv2.gif" alt="Background Animation">
-      </div>
-      
+        <!-- <img src="bgv2.gif" alt="Background Animation"> -->
+        <canvas id="starfield"></canvas>
+    </div>
+
 
     <!-- Hero Section -->
     <header id="home" class="hero d-flex align-items-center justify-content-center">
         <div class="container text-center">
-            <h1 class="display-1 text-light "><b>MD. ASIF HASAN</b></h1>
-            <p class="display-6 text-light"><b>Engineer | Researcher | Developer</b></p>
+            <h1 class="display-1 text-light"><b>MD. ASIF HASAN</b></h1>
+            <p class="display-6 text-light">
+                <b>
+                    <span class="highlight-text researcher">R</span>esearcher |
+                    <span class="highlight-text engineer">E</span>ngineer |
+                    <span class="highlight-text developer">D</span>eveloper
+                </b>
+            </p>
         </div>
     </header>
+
+
+
+
 
     <!-- About Section -->
     <section id="about" class="py-5 bg-dark-gradient">
         <div class="container">
             <div class="row align-items-center">
+                <!-- Profile Image Section -->
                 <div class="col-lg-4 col-md-5 text-center mb-5 mb-md-0">
                     <div class="profile-container position-relative">
                         <img src="profile.jpg" alt="Asif Hasan" class="img-fluid rounded-circle profile-image shadow-lg"
-                            style="border: 3px solid #20c997; max-width: 280px;">
+                            style="border: 3px solid #20c997; max-width: 100%; height: auto;">
                         <div class="decoration-box"></div>
                     </div>
                 </div>
 
+                <!-- About Content Section -->
                 <div class="col-lg-8 col-md-7">
                     <div class="about-content p-4 p-lg-5 bg-glass shadow-lg">
                         <h2 class="display-4 mb-4 text-gradient">About Me</h2>
@@ -69,50 +83,26 @@
                             <div class="accent-line"></div>
                         </div>
                         <p class="lead text-light mb-4">
-                            <span class="highlight">AI Engineer</span> specializing in deep learning architectures &
-                            blockchain solutions
-                        </p>
-                        <p class="text-light mb-4">
-                            <strong>Profession:</strong> AI Engineer specializing in deep learning, machine learning,
-                            and blockchain technologies.<br>
-                            <strong>Education:</strong> B.Sc. in Computer Science and Engineering from East West
-                            University, Dhaka, Bangladesh.<br>
-                            Currently pursuing M.S. in Computer Science and Engineering at East West University.<br><br>
-
-                            <strong>Technical Skills:</strong><br>
-                            - Proficient in Python, C++, Java, JavaScript.<br>
-                            - Experienced in AI/ML techniques like deep learning, reinforcement learning, CNN, LSTM, and
-                            blockchain.<br>
-                            - Developed projects such as trading bots, AI-based chess bots, and news recommendation
-                            systems.<br><br>
-
-                            <strong>Extracurricular Activities:</strong><br>
-                            - <strong>Scouting:</strong> Senior Rover Mate, Messenger of Peace Ring Badge recipient,
-                            National Service Award for community work.<br>
-                            - <strong>Debating:</strong> University-level champion in 2023, trainer, and General
-                            Secretary during college.<br>
-                            - <strong>Competitive Programming:</strong> Solved thousands of problems on Codeforces,
-                            Hackerrank, and Beecrowd.<br>
-                            - <strong>Leo Club:</strong> Active member for five years, Treasurer (2019-2020), involved
-                            in community development projects.<br>
-                            - <strong>Martial Arts:</strong> Blue belt in Karate, Green belt in Taekwondo.<br>
-                            - <strong>Marathon Running:</strong> Completed 20 events, organized 4 events with Run
-                            Bangladesh.<br><br>
-
-                            <strong>Community Development:</strong><br>
-                            - Organized and participated in community service projects as part of the Leo Club and
-                            Scouting.<br>
-                            - Committed to using tech and skills for social impact and development.
+                            <span class="highlight">AI Engineer </span> conducting research on cutting-edge
+                            methodologies in data science, artificial intelligence, machine learning, deep neural
+                            networks, computer vision, and image processing, with a goal to develop innovative and
+                            scalable solutions for real-world challenges. Passionate about developing automated
+                            systems, with a keen interest in
+                            blockchain technology and decentralized systems, striving to create innovative, scalable
+                            solutions that drive intelligent, data-driven applications.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <!-- Research Publications Section -->
     <!-- Research Publications Section -->
     <section id="research" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4 text-light">Research Publications</h2>
+            <h2 class="text-center mb-4">Research Publications</h2>
             <div class="accordion" id="researchAccordion">
 
                 <!-- Research Paper 1 -->
@@ -122,15 +112,16 @@
                             class="accordion-button bg-dark text-light d-flex justify-content-between align-items-center text-start"
                             type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                             aria-controls="collapseOne">
-                            <div class="text-start">
-                                <h6 class="mb-0">Ensemble Deep Learning for Enhanced Detection and Classification of
-                                    Hand, Foot, and Mouth Disease</h6>
-                                <small>Presented at the International Conference on Data Mining and Information Security
-                                    2024</small>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-person-raised-hand fs-5 me-3" style="color: #ffcc00;"></i>
+                                <div class="text-start">
+                                    <h6 class="mb-0">Ensemble Deep Learning for Enhanced Detection and Classification of
+                                        Hand, Foot, and Mouth Disease</h6>
+                                    <small>Presented at the International Conference on Data Mining and Information
+                                        Security 2024</small>
+                                </div>
                             </div>
                         </button>
-
-
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#researchAccordion">
@@ -139,11 +130,7 @@
                             <p>This study addresses the significant challenge of accurately detecting Hand, Foot, and
                                 Mouth Disease (HFMD) in infants and children. The research leverages deep neural
                                 networks, specifically an ensemble learning approach, to enhance robustness and accuracy
-                                in HFMD identification. The meta-model combines predictions from pre-trained neural
-                                network architectures, aiming to overcome limitations posed by sparse data and diverse
-                                symptom presentations. Our goals include improving HFMD detection precision and
-                                comprehensiveness. Results demonstrate the approach’s effectiveness, achieving a notable
-                                94% accuracy on a dedicated test set.</p>
+                                in HFMD identification...</p>
                         </div>
                     </div>
                 </div>
@@ -155,11 +142,14 @@
                             class="accordion-button collapsed bg-dark text-light d-flex justify-content-between align-items-center text-start"
                             type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                             aria-controls="collapseTwo">
-                            <div class="text-start">
-                                <h6 class="mb-0">Classification of Peptic Ulcer and Digestive Tract Disorders Using
-                                    Endoscopic Images</h6>
-                                <small>Presented at the International Conference on Data Mining and Information
-                                    Security 2024</small>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-lungs fs-5 me-3" style="color: #17a2b8;"></i>
+                                <div class="text-start">
+                                    <h6 class="mb-0">Classification of Peptic Ulcer and Digestive Tract Disorders Using
+                                        Endoscopic Images</h6>
+                                    <small>Presented at the International Conference on Data Mining and Information
+                                        Security 2024</small>
+                                </div>
                             </div>
                         </button>
                     </h2>
@@ -170,13 +160,7 @@
                             <p>Peptic ulcers and other digestive tract disorders pose significant diagnostic challenges,
                                 often requiring expert analysis of endoscopic images. In this study, we aim to assist in
                                 the examination of gastrointestinal (GI) tract endoscopy images using advanced image
-                                classification techniques. Utilizing the Kvasir dataset, which comprises 3500 labeled
-                                images, we applied Contrast Limited Adaptive Histogram Equalization (CLAHE) for image
-                                preprocessing to enhance feature extraction. We implemented convolutional neural
-                                networks (CNNs) with InceptionV3 and ResNet50V2 architectures to classify endoscopic
-                                images into four categories: normal, esophagitis, polyps, and ulcerative colitis. Our
-                                model achieved a training accuracy of 100.00% and a validation accuracy of 92.71%,
-                                demonstrating its effectiveness in identifying digestive tract disorders.</p>
+                                classification techniques...</p>
                         </div>
                     </div>
                 </div>
@@ -188,14 +172,15 @@
                             class="accordion-button collapsed bg-dark text-light d-flex justify-content-between align-items-center text-start"
                             type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
                             aria-expanded="false" aria-controls="collapseThree">
-                            <div class="text-start">
-                                <h6 class="mb-0">Rose Disease Detection Using YOLO: A Deep Learning-Based Approach</h6>
-                                <small>9th International Conference on ICTCS 2024</small>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-flower2 fs-5 me-3" style="color: #28a745;"></i>
+                                <div class="text-start">
+                                    <h6 class="mb-0">Rose Disease Detection Using YOLO: A Deep Learning-Based Approach
+                                    </h6>
+                                    <small>9th International Conference on ICTCS 2024</small>
+                                </div>
                             </div>
                         </button>
-
-
-
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#researchAccordion">
@@ -204,11 +189,7 @@
                             <p>The rose is one of the world’s most significant flowers, which is cultivated widely. But,
                                 it is susceptible to various types of diseases that can lead to a substantial reduction
                                 in yield. Hence, early detection of these diseases is essential to avoid risk and ensure
-                                timely treatment. This research proposes a deep learning-based approach to detect rose
-                                leaf disease at an early stage using the YOLO model variants (YOLOv5 and YOLOv8).
-                                Experimental results demonstrate that YOLOv8 has achieved 71% precision, 65.1% recall,
-                                and 66.3% mAP(50), whereas YOLOv5 achieved 70% precision, 60% recall, and 66.4% mAP(50).
-                            </p>
+                                timely treatment...</p>
                         </div>
                     </div>
                 </div>
@@ -216,6 +197,8 @@
             </div>
         </div>
     </section>
+
+
 
 
     <!-- Research Experience Section -->
@@ -828,7 +811,9 @@
                 <div class="col-md-4 mb-3">
                     <div class="card h-100 bg-dark text-light">
                         <div class="card-body">
-                            <h5 class="card-title">Programming Languages</h5>
+                            <h5 class="card-title d-flex align-items-center">
+                                <i class="fab fa-cuttlefish me-2" style="color:#f0a500;"></i> Programming Languages
+                            </h5>
                             <p class="card-text">C, C++, Java, Python, JavaScript, PHP</p>
                         </div>
                     </div>
@@ -837,7 +822,9 @@
                 <div class="col-md-4 mb-3">
                     <div class="card h-100 bg-dark text-light">
                         <div class="card-body">
-                            <h5 class="card-title">Tools & Technologies</h5>
+                            <h5 class="card-title d-flex align-items-center">
+                                <i class="fab fa-linux me-2" style="color:#FF6F00;"></i> Tools & Technologies
+                            </h5>
                             <p class="card-text">TensorFlow, PyTorch, CUDA, Linux, Flask, MERN Stack, OpenCV</p>
                         </div>
                     </div>
@@ -846,7 +833,9 @@
                 <div class="col-md-4 mb-3">
                     <div class="card h-100 bg-dark text-light">
                         <div class="card-body">
-                            <h5 class="card-title">AI & Machine Learning</h5>
+                            <h5 class="card-title d-flex align-items-center">
+                                <i class="fas fa-brain me-2" style="color:#1e88e5;"></i> AI & Machine Learning
+                            </h5>
                             <p class="card-text">Deep Learning, CNN, LSTM, Transformers, Autoencoders, Reinforcement
                                 Learning</p>
                         </div>
@@ -856,7 +845,9 @@
                 <div class="col-md-4 mb-3">
                     <div class="card h-100 bg-dark text-light">
                         <div class="card-body">
-                            <h5 class="card-title">Blockchain & Cryptography</h5>
+                            <h5 class="card-title d-flex align-items-center">
+                                <i class="fab fa-bitcoin me-2" style="color:#F2A900;"></i> Blockchain & Cryptography
+                            </h5>
                             <p class="card-text">Consensus Algorithms, Smart Contracts, Post-Quantum Cryptography,
                                 Decentralized Apps</p>
                         </div>
@@ -866,7 +857,9 @@
                 <div class="col-md-4 mb-3">
                     <div class="card h-100 bg-dark text-light">
                         <div class="card-body">
-                            <h5 class="card-title">Data Science & Analytics</h5>
+                            <h5 class="card-title d-flex align-items-center">
+                                <i class="fas fa-chart-line me-2" style="color:#0C9A92;"></i> Data Science & Analytics
+                            </h5>
                             <p class="card-text">Feature Engineering, Bayesian Optimization, GMM, Time Series Analysis
                             </p>
                         </div>
@@ -876,7 +869,9 @@
                 <div class="col-md-4 mb-3">
                     <div class="card h-100 bg-dark text-light">
                         <div class="card-body">
-                            <h5 class="card-title">Web & Backend Development</h5>
+                            <h5 class="card-title d-flex align-items-center">
+                                <i class="fab fa-node me-2" style="color:#00BFAE;"></i> Web & Backend Development
+                            </h5>
                             <p class="card-text">Full-Stack (MERN), Flask APIs, RESTful Services, Cloud Deployment</p>
                         </div>
                     </div>
@@ -884,30 +879,34 @@
                 <!-- Embedded Systems & IoT -->
                 <div class="col-md-4 mb-3">
                     <div class="card h-100 bg-dark text-light">
-                        <div class="card-body d-flex flex-column  d-flex flex-column justify-content-between justify-content-between">
-                            <h5 class="card-title">Embedded Systems & IoT</h5>
+                        <div class="card-body">
+                            <h5 class="card-title d-flex align-items-center">
+                                <i class="fas fa-plug me-2" style="color:#D4C6FF;"></i> Embedded Systems & IoT
+                            </h5>
                             <p class="card-text">Raspberry Pi, Arduino, Wireless Networking, IoT Security</p>
                         </div>
                     </div>
                 </div>
-                
-
                 <!-- Algorithms & Optimization -->
                 <div class="col-md-4 mb-3">
                     <div class="card h-100 bg-dark text-light">
                         <div class="card-body">
-                            <h5 class="card-title">Algorithms & Optimization</h5>
+                            <h5 class="card-title d-flex align-items-center">
+                                <i class="fas fa-cogs me-2" style="color:#9C27B0;"></i> Algorithms & Optimization
+                            </h5>
                             <p class="card-text">Ensemble Learning, Meta-Learning, Heuristic Optimization, Genetic
                                 Algorithms</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Algorithms & Optimization -->
+                <!-- Operating Systems & Cybersecurity -->
                 <div class="col-md-4 mb-3">
                     <div class="card h-100 bg-dark text-light">
                         <div class="card-body">
-                            <h5 class="card-title">Operating Systems & Cybersecurity</h5>
+                            <h5 class="card-title d-flex align-items-center">
+                                <i class="fas fa-shield-alt me-2" style="color:#FF5722;"></i> Operating Systems &
+                                Cybersecurity
+                            </h5>
                             <p class="card-text">
                                 <strong>OS:</strong> Kali, Parrot, Manjaro, Ubuntu<br>
                                 <strong>Penetration Testing Tools:</strong> Airgeddon, Wireshark, Nmap, Aircrack-ng,
@@ -916,58 +915,83 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
 
+
     <!-- Contact Section -->
-<section id="contact" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4 text-light">Contact</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card p-4 bg-dark text-light">
-                    <div class="social-links mt-4 d-flex justify-content-center align-items-center">
-                        <a href="https://github.com/asicoltd" class="btn btn-outline-secondary btn-icon me-2"
-                            target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.hackerrank.com/profile/asifhasan099"
-                            class="btn btn-outline-success btn-icon me-2" target="_blank">
-                            <i class="fab fa-hackerrank"></i>
-                        </a>
-                        <a href="https://judge.beecrowd.com/en/profile/416286"
-                            class="btn btn-outline-warning btn-icon me-2" target="_blank">
-                            <i class="fas fa-cogs"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/asif-hasan-099/" class="btn btn-outline-info btn-icon me-2"
-                            target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="mailto:asifhasan099@gmail.com" class="btn btn-outline-danger btn-icon me-2"
-                            target="_blank">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="https://www.facebook.com/asifhasan099"
-                            class="btn btn-outline-primary btn-icon me-2" target="_blank">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/asico_ltd" class="btn btn-outline-info btn-icon me-2"
-                            target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://x.com/asicoltd"
-                            class="btn btn-outline-primary btn-icon me-2" target="_blank">
-                            <i class="fab fa-twitter"></i>
-                        </a>
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 text-light">Contact</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card p-4 bg-dark text-light">
+                        <div class="social-links mt-4 d-flex flex-wrap justify-content-center align-items-center">
+                            <div class="social-icon text-center mx-3 mb-3">
+                                <a href="https://github.com/asicoltd" class="btn btn-outline-secondary btn-icon"
+                                    target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <p class="text-light mt-2">GitHub</p>
+                            </div>
+                            <div class="social-icon text-center mx-3 mb-3">
+                                <a href="https://www.hackerrank.com/profile/asifhasan099"
+                                    class="btn btn-outline-success btn-icon" target="_blank">
+                                    <i class="fab fa-hackerrank"></i>
+                                </a>
+                                <p class="text-light mt-2">HackerRank</p>
+                            </div>
+                            <div class="social-icon text-center mx-3 mb-3">
+                                <a href="https://judge.beecrowd.com/en/profile/416286"
+                                    class="btn btn-outline-warning btn-icon" target="_blank">
+                                    <i class="fas fa-cogs"></i>
+                                </a>
+                                <p class="text-light mt-2">Beecrowd</p>
+                            </div>
+                            <div class="social-icon text-center mx-3 mb-3">
+                                <a href="https://www.linkedin.com/in/asif-hasan-099/"
+                                    class="btn btn-outline-info btn-icon" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <p class="text-light mt-2">LinkedIn</p>
+                            </div>
+                            <div class="social-icon text-center mx-3 mb-3">
+                                <a href="mailto:asifhasan099@gmail.com" class="btn btn-outline-danger btn-icon"
+                                    target="_blank">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <p class="text-light mt-2">Email</p>
+                            </div>
+                            <div class="social-icon text-center mx-3 mb-3">
+                                <a href="https://www.facebook.com/asifhasan099" class="btn btn-outline-primary btn-icon"
+                                    target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <p class="text-light mt-2">Facebook</p>
+                            </div>
+                            <div class="social-icon text-center mx-3 mb-3">
+                                <a href="https://www.instagram.com/asico_ltd" class="btn btn-outline-info btn-icon"
+                                    target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <p class="text-light mt-2">Instagram</p>
+                            </div>
+                            <div class="social-icon text-center mx-3 mb-3">
+                                <a href="https://x.com/asicoltd" class="btn btn-outline-primary btn-icon"
+                                    target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <p class="text-light mt-2">Twitter</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
 
 
     <!-- Footer -->
