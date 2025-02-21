@@ -1,19 +1,4 @@
-// Get the current timestamp
-const timestamp = new Date().getTime();
 
-// Check if timestamp is positive or negative and change the video source
-const videoSource = document.getElementById('video-source');
-// videoSource.src = 'bgv2.gif';
-
-// Reload the video to reflect the change in the source
-const video = document.getElementById('bg-video');
-// video.load();
-window.addEventListener('load', function () {
-    var audio = document.getElementById('backgroundMusic');
-    if (audio.paused) {
-        audio.play();
-    }
-});
 // JavaScript to handle toggle functionality
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('#experience ul').forEach(ul => {

@@ -45,25 +45,27 @@
 
 
     <!-- Hero Section -->
-    <header id="home" class="hero d-flex align-items-center justify-content-center">
-        <div class="container text-center">
-            <h1 class="display-1 text-light"><b>MD. ASIF HASAN</b></h1>
-            <p class="display-6 text-light">
+    <header id="home" class="hero d-flex align-items-center justify-content-center"
+        style="background-size: cover; height: 100vh; position: relative; overflow: hidden;">
+        <div class="container text-center text-light position-relative z-index-2">
+            <h1 class="display-1 mb-4 hero-title"><b>MD. ASIF HASAN</b></h1>
+            <p class="display-4 mb-4 hero-subtitle">
                 <b>
                     <span class="highlight-text researcher">R</span>esearcher |
                     <span class="highlight-text engineer">E</span>ngineer |
                     <span class="highlight-text developer">D</span>eveloper
                 </b>
             </p>
+            <p class="lead mb-5 hero-description">Driven by a passion to innovate in AI, ML, and Blockchain
+                technologies.</p>
         </div>
     </header>
 
 
 
 
-
     <!-- About Section -->
-    <section id="about" class="py-5 bg-dark-gradient">
+    <section id="about" class="py-5">
         <div class="container">
             <div class="row align-items-center">
                 <!-- Profile Image Section -->
@@ -97,99 +99,97 @@
         </div>
     </section>
 
-
-    <!-- Research Publications Section -->
     <!-- Research Publications Section -->
     <section id="research" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Research Publications</h2>
+            <h2 class="text-center mb-4 text-light display-3">Research Publications</h2>
             <div class="accordion" id="researchAccordion">
 
                 <!-- Research Paper 1 -->
-                <div class="accordion-item bg-dark text-light">
+                <div class="accordion-item bg-dark text-light border-0 shadow-lg rounded-3 mb-3">
                     <h2 class="accordion-header" id="headingOne">
                         <button
                             class="accordion-button bg-dark text-light d-flex justify-content-between align-items-center text-start"
-                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
                             aria-controls="collapseOne">
                             <div class="d-flex align-items-center">
-                                <i class="bi bi-person-raised-hand fs-5 me-3" style="color: #ffcc00;"></i>
+                                <i class="bi bi-person-raised-hand fs-5 me-3 icon-color-1"></i>
                                 <div class="text-start">
-                                    <h6 class="mb-0">Ensemble Deep Learning for Enhanced Detection and Classification of
-                                        Hand, Foot, and Mouth Disease</h6>
-                                    <small>Presented at the International Conference on Data Mining and Information
-                                        Security 2024</small>
+                                    <h6 class="mb-0 fs-4">Ensemble Deep Learning for Enhanced Detection and
+                                        Classification of Hand, Foot, and Mouth Disease</h6>
+                                    <small class="fs-5">Presented at the International Conference on Data Mining and
+                                        Information Security 2024</small>
                                 </div>
                             </div>
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                         data-bs-parent="#researchAccordion">
-                        <div class="accordion-body bg-secondary text-light">
+                        <div class="accordion-body bg-dark text-light fs-5">
                             <b>Abstract</b>
                             <p>This study addresses the significant challenge of accurately detecting Hand, Foot, and
                                 Mouth Disease (HFMD) in infants and children. The research leverages deep neural
                                 networks, specifically an ensemble learning approach, to enhance robustness and accuracy
-                                in HFMD identification...</p>
+                                in HFMD identification.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Research Paper 2 -->
-                <div class="accordion-item bg-dark text-light">
+                <div class="accordion-item bg-dark text-light border-0 shadow-lg rounded-3 mb-3">
                     <h2 class="accordion-header" id="headingTwo">
                         <button
                             class="accordion-button collapsed bg-dark text-light d-flex justify-content-between align-items-center text-start"
                             type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                             aria-controls="collapseTwo">
                             <div class="d-flex align-items-center">
-                                <i class="bi bi-lungs fs-5 me-3" style="color: #17a2b8;"></i>
+                                <i class="bi bi-lungs fs-5 me-3 icon-color-2"></i>
                                 <div class="text-start">
-                                    <h6 class="mb-0">Classification of Peptic Ulcer and Digestive Tract Disorders Using
-                                        Endoscopic Images</h6>
-                                    <small>Presented at the International Conference on Data Mining and Information
-                                        Security 2024</small>
+                                    <h6 class="mb-0 fs-4">Classification of Peptic Ulcer and Digestive Tract Disorders
+                                        Using Endoscopic Images</h6>
+                                    <small class="fs-5">Presented at the International Conference on Data Mining and
+                                        Information Security 2024</small>
                                 </div>
                             </div>
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#researchAccordion">
-                        <div class="accordion-body bg-secondary text-light">
+                        <div class="accordion-body bg-dark text-light fs-5">
                             <b>Abstract</b>
                             <p>Peptic ulcers and other digestive tract disorders pose significant diagnostic challenges,
                                 often requiring expert analysis of endoscopic images. In this study, we aim to assist in
                                 the examination of gastrointestinal (GI) tract endoscopy images using advanced image
-                                classification techniques...</p>
+                                classification techniques.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Research Paper 3 -->
-                <div class="accordion-item bg-dark text-light">
+                <div class="accordion-item bg-dark text-light border-0 shadow-lg rounded-3 mb-3">
                     <h2 class="accordion-header" id="headingThree">
                         <button
                             class="accordion-button collapsed bg-dark text-light d-flex justify-content-between align-items-center text-start"
                             type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
                             aria-expanded="false" aria-controls="collapseThree">
                             <div class="d-flex align-items-center">
-                                <i class="bi bi-flower2 fs-5 me-3" style="color: #28a745;"></i>
+                                <i class="bi bi-flower2 fs-5 me-3 icon-color-3"></i>
                                 <div class="text-start">
-                                    <h6 class="mb-0">Rose Disease Detection Using YOLO: A Deep Learning-Based Approach
-                                    </h6>
-                                    <small>9th International Conference on ICTCS 2024</small>
+                                    <h6 class="mb-0 fs-4">Rose Disease Detection Using YOLO: A Deep Learning-Based
+                                        Approach</h6>
+                                    <small class="fs-5">9th International Conference on ICTCS 2024</small>
                                 </div>
                             </div>
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#researchAccordion">
-                        <div class="accordion-body bg-secondary text-light">
+                        <div class="accordion-body bg-dark text-light fs-5">
                             <b>Abstract</b>
                             <p>The rose is one of the world’s most significant flowers, which is cultivated widely. But,
                                 it is susceptible to various types of diseases that can lead to a substantial reduction
                                 in yield. Hence, early detection of these diseases is essential to avoid risk and ensure
-                                timely treatment...</p>
+                                timely treatment.</p>
                         </div>
                     </div>
                 </div>
@@ -197,610 +197,827 @@
             </div>
         </div>
     </section>
-
-
-
-
     <!-- Research Experience Section -->
-    <section id="experience" class="py-5">
+    <section id="research-experience" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4 text-light">Research Experience</h2>
-            <div class="row">
 
-                <!-- ONE Simulator -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card bg-dark text-light h-100 d-flex flex-column">
-                        <div class="card-body d-flex flex-column  d-flex flex-column justify-content-between">
-                            <h5 class="card-title">The Opportunistic Network Environment (ONE) Simulator</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Researcher | Delay-Tolerant Networking, ONE
-                                Simulator</h6>
-                            <p class="card-text">This research delves into optimizing Delay-Tolerant Networking (DTN)
-                                protocols to enhance emergency communication systems in disrupted environments,
-                                particularly natural disasters. The ONE simulator was utilized to simulate realistic
-                                scenarios where connectivity is unreliable or unavailable, such as during floods,
-                                earthquakes, or wildfires, focusing on improving message delivery, reducing latency, and
-                                boosting throughput.</p>
-                            <ul class="mt-auto">
-                                <li><strong>Analysis of Current DTN Protocols:</strong> Evaluated various DTN routing
-                                    protocols such as Epidemic, Spray and Wait, and PRoPHET, identifying their strengths
-                                    and weaknesses in disaster scenarios.</li>
-                                <li><strong>Real-World Disaster Simulations:</strong> Utilized the ONE simulator to
-                                    replicate disaster environments with limited bandwidth, high latency, and
-                                    intermittent connectivity, ensuring accurate performance testing under challenging
-                                    conditions.</li>
-                                <li><strong>Optimized Routing Protocols:</strong> Focused on enhancing DTN protocols for
-                                    better message delivery rates, reduced delay, and more efficient resource usage
-                                    under constrained environments.</li>
-                                <li><strong>Mobile Application Development:</strong> Designed and tested a mobile app
-                                    that integrates DTN protocols for real-time disaster communication, ensuring that
-                                    users can send and receive messages even when conventional network infrastructure
-                                    fails.</li>
-                                <li><strong>Security Considerations:</strong> Addressed security challenges, such as
-                                    data integrity, confidentiality, and authentication, within DTN-based emergency
-                                    messaging systems to ensure secure communication during disasters.</li>
-                                <li><strong>Scalability and Performance Assessment:</strong> Tested the scalability of
-                                    DTN protocols in large-scale disaster scenarios, evaluating performance metrics such
-                                    as message delivery time, latency, and throughput.</li>
-                                <li><strong>Integration with Existing Disaster Systems:</strong> Explored the
-                                    integration of the optimized DTN protocols into existing emergency messaging
-                                    frameworks, ensuring compatibility and ease of deployment in real-world disaster
-                                    management systems.</li>
-                                <li><strong>Feasibility of Real-Time Communication:</strong> Analyzed the feasibility of
-                                    establishing a real-time emergency messaging system based on DTN, even in
-                                    environments where traditional communication networks fail or are unavailable.</li>
-                                <li><strong>Community Impact:</strong> Highlighted the potential of the project to
-                                    provide reliable, low-cost communication tools to support humanitarian efforts and
-                                    rescue operations during natural disasters.</li>
-                                <li><strong>Future Research Directions:</strong> Proposed further investigation into
-                                    post-disaster recovery communication systems, leveraging advancements in AI and
-                                    machine learning for dynamic protocol adaptation based on environmental factors.
-                                </li>
+            <!-- The Opportunistic Network Environment (ONE) Simulator -->
+            <div class="accordion" id="researchExperienceAccordion">
+                <div class="accordion-item bg-dark text-light border-0 shadow-lg rounded-3 mb-3">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button
+                            class="accordion-button bg-dark text-light d-flex justify-content-between align-items-center text-start"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse2One" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-broadcast fs-5 me-3 icon-color-1"></i>
+                                <div class="text-start">
+                                    <h5 class="mb-0">The Opportunistic Network Environment (ONE) Simulator</h5>
+                                    <small>Researcher | Delay-Tolerant Networking, ONE Simulator</small>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse2One" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#researchExperienceAccordion">
+                        <div class="accordion-body bg-dark text-light">
+                            <p>This research delves into optimizing Delay-Tolerant Networking (DTN) protocols to enhance
+                                emergency communication systems in disrupted environments, particularly natural
+                                disasters. The ONE simulator was utilized to simulate realistic scenarios where
+                                connectivity is unreliable or unavailable, such as during floods, earthquakes, or
+                                wildfires, focusing on improving message delivery, reducing latency, and boosting
+                                throughput.</p>
+
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Analysis of Current DTN
+                                        Protocols:</strong> Evaluated various DTN routing protocols such as Epidemic,
+                                    Spray and Wait, and PRoPHET, identifying their strengths and weaknesses in disaster
+                                    scenarios.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Real-World Disaster
+                                        Simulations:</strong> Utilized the ONE simulator to replicate disaster
+                                    environments with limited bandwidth, high latency, and intermittent connectivity,
+                                    ensuring accurate performance testing under challenging conditions.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Optimized Routing
+                                        Protocols:</strong> Focused on enhancing DTN protocols for better message
+                                    delivery rates, reduced delay, and more efficient resource usage under constrained
+                                    environments.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Mobile Application
+                                        Development:</strong> Designed and tested a mobile app that integrates DTN
+                                    protocols for real-time disaster communication, ensuring that users can send and
+                                    receive messages even when conventional network infrastructure fails.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Security
+                                        Considerations:</strong> Addressed security challenges, such as data integrity,
+                                    confidentiality, and authentication, within DTN-based emergency messaging systems to
+                                    ensure secure communication during disasters.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Scalability and Performance
+                                        Assessment:</strong> Tested the scalability of DTN protocols in large-scale
+                                    disaster scenarios, evaluating performance metrics such as message delivery time,
+                                    latency, and throughput.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Integration with Existing
+                                        Disaster Systems:</strong> Explored the integration of the optimized DTN
+                                    protocols into existing emergency messaging frameworks, ensuring compatibility and
+                                    ease of deployment in real-world disaster management systems.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Feasibility of Real-Time
+                                        Communication:</strong> Analyzed the feasibility of establishing a real-time
+                                    emergency messaging system based on DTN, even in environments where traditional
+                                    communication networks fail or are unavailable.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Community Impact:</strong>
+                                    Highlighted the potential of the project to provide reliable, low-cost communication
+                                    tools to support humanitarian efforts and rescue operations during natural
+                                    disasters.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Future Research
+                                        Directions:</strong> Proposed further investigation into post-disaster recovery
+                                    communication systems, leveraging advancements in AI and machine learning for
+                                    dynamic protocol adaptation based on environmental factors.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="accordion" id="newsRecommendationAccordion">
+                <div class="accordion-item bg-dark text-light border-0 shadow-lg rounded-3 mb-3">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button
+                            class="accordion-button bg-dark text-light d-flex justify-content-between align-items-center text-start"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse2Two" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-newspaper fs-5 me-3 icon-color-1"></i>
+                                <div class="text-start">
+                                    <h5 class="mb-0">AI-Driven News Recommendation System</h5>
+                                    <small>Project Lead | Neural Collaborative Filtering, PyTorch</small>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse2Two" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#newsRecommendationAccordion">
+                        <div class="accordion-body bg-dark text-light">
+                            <p>Developed a personalized news recommendation system leveraging Neural Collaborative
+                                Filtering (NCF) to combine content-based and collaborative filtering techniques. The
+                                system was designed to handle large-scale datasets and generate precise, real-time
+                                recommendations, enhancing user engagement through tailored news suggestions.</p>
 
-
-
-
-                <!-- Hybrid News Recommender System -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card bg-dark text-light h-100 d-flex flex-column">
-                        <div class="card-body d-flex flex-column  d-flex flex-column justify-content-between">
-                            <h5 class="card-title">AI-Driven News Recommendation System</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Project Lead | Neural Collaborative Filtering,
-                                PyTorch</h6>
-                            <p class="card-text">Developed a personalized news recommendation system leveraging Neural
-                                Collaborative Filtering (NCF) to combine content-based and collaborative filtering
-                                techniques. The system was designed to handle large-scale datasets and generate precise,
-                                real-time recommendations, enhancing user engagement through tailored news suggestions.
-                            </p>
-                            <ul class="mt-auto">
-                                <li><strong>Implemented Neural Collaborative Filtering (NCF):</strong> Developed and
-                                    deployed the NCF model for accurate user-specific recommendations by learning
-                                    interactions between users and news items.</li>
-                                <li><strong>Hybrid Recommendation Approach:</strong> Combined content-based and
-                                    collaborative filtering to improve recommendation accuracy, utilizing both the
-                                    similarity between users and the content of the news articles.</li>
-                                <li><strong>Model Optimization:</strong> Optimized training with model checkpointing
-                                    techniques for automatic recovery in case of failure and continuous training across
-                                    large datasets.</li>
-                                <li><strong>Performance Evaluation:</strong> Evaluated model performance using
-                                    precision, recall, F1-score, and AUC to ensure the recommendation system meets user
-                                    satisfaction and accuracy requirements.</li>
-                                <li><strong>Data Augmentation:</strong> Applied data augmentation techniques, such as
-                                    noise addition and transformation, to improve the generalization of the model and
-                                    prevent overfitting.</li>
-                                <li><strong>Modular System Design:</strong> Created a flexible and modular architecture
-                                    that can be extended to integrate additional models like CNN and LSTM for further
-                                    recommendation improvements.</li>
-                                <li><strong>Data Preprocessing:</strong> Handled extensive data preprocessing tasks,
-                                    including encoding user data and news articles, ensuring clean, structured input for
-                                    the recommendation system.</li>
-                                <li><strong>Recommendation Diversity:</strong> Improved recommendation diversity and
-                                    precision by fine-tuning the system to balance between personalization and novelty
-                                    in suggestions.</li>
-                                <li><strong>Collaborative Testing and Deployment:</strong> Worked with a
-                                    cross-functional team to thoroughly test and deploy the recommendation system,
-                                    ensuring that it met the needs of real-world users.</li>
-                                <li><strong>CSV Report Generation:</strong> Generated CSV reports containing user
-                                    recommendations, enabling detailed analysis and further optimization of the system.
-                                </li>
-                                <li><strong>Model Improvement and Feedback Loop:</strong> Continuously incorporated user
-                                    feedback and behavioral data to improve recommendation accuracy and user
-                                    satisfaction over time.</li>
-                                <li><strong>Real-Time Analytics:</strong> Integrated real-time analytics to track system
-                                    performance, user engagement, and recommendation relevance to adjust the system
-                                    dynamically.</li>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Implemented Neural
+                                        Collaborative Filtering (NCF):</strong> Developed and deployed the NCF model for
+                                    accurate user-specific recommendations by learning interactions between users and
+                                    news items.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Hybrid Recommendation
+                                        Approach:</strong> Combined content-based and collaborative filtering to improve
+                                    recommendation accuracy, utilizing both the similarity between users and the content
+                                    of the news articles.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Model Optimization:</strong>
+                                    Optimized training with model checkpointing techniques for automatic recovery in
+                                    case of failure and continuous training across large datasets.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Performance
+                                        Evaluation:</strong> Evaluated model performance using precision, recall,
+                                    F1-score, and AUC to ensure the recommendation system meets user satisfaction and
+                                    accuracy requirements.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Data Augmentation:</strong>
+                                    Applied data augmentation techniques, such as noise addition and transformation, to
+                                    improve the generalization of the model and prevent overfitting.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Modular System
+                                        Design:</strong> Created a flexible and modular architecture that can be
+                                    extended to integrate additional models like CNN and LSTM for further recommendation
+                                    improvements.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Data Preprocessing:</strong>
+                                    Handled extensive data preprocessing tasks, including encoding user data and news
+                                    articles, ensuring clean, structured input for the recommendation system.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Recommendation
+                                        Diversity:</strong> Improved recommendation diversity and precision by
+                                    fine-tuning the system to balance between personalization and novelty in
+                                    suggestions.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Collaborative Testing and
+                                        Deployment:</strong> Worked with a cross-functional team to thoroughly test and
+                                    deploy the recommendation system, ensuring that it met the needs of real-world
+                                    users.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>CSV Report
+                                        Generation:</strong> Generated CSV reports containing user recommendations,
+                                    enabling detailed analysis and further optimization of the system.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Model Improvement and
+                                        Feedback Loop:</strong> Continuously incorporated user feedback and behavioral
+                                    data to improve recommendation accuracy and user satisfaction over time.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Real-Time
+                                        Analytics:</strong> Integrated real-time analytics to track system performance,
+                                    user engagement, and recommendation relevance to adjust the system dynamically.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card bg-dark text-light h-100 d-flex flex-column">
-                        <div class="card-body d-flex flex-column  d-flex flex-column justify-content-between">
-                            <h5 class="card-title">AI-Based Chess Bot</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Lead Developer | Python, Q-learning, Deep
-                                Q-Networks (DQN), Monte Carlo Tree Search (MCTS)</h6>
-                            <p class="card-text">Developed an AI-powered chess bot that utilizes reinforcement learning
-                                techniques such as Q-learning and Deep Q-Networks (DQN) to learn and improve its
-                                gameplay. The bot also incorporates Monte Carlo Tree Search (MCTS) to evaluate and
-                                select optimal moves. It continuously adapts to opponents, making it highly competitive
-                                on online chess platforms.</p>
-                            <ul class="mt-auto">
-                                <li><strong>Reinforcement Learning Implementation:</strong> Developed a chess bot that
-                                    learns through Q-learning and Deep Q-Networks (DQN), enabling it to improve its
-                                    strategies over time by evaluating past gameplay experiences.</li>
-                                <li><strong>Monte Carlo Tree Search (MCTS):</strong> Implemented MCTS for advanced move
-                                    evaluation, allowing the bot to plan multiple moves ahead and make strategic
-                                    decisions based on potential future outcomes.</li>
-                                <li><strong>Expert-Level Training:</strong> Trained the bot on a comprehensive dataset
-                                    of expert-level chess games, enabling it to identify and replicate high-level
-                                    strategies and tactics used by top players.</li>
-                                <li><strong>TensorFlow for DQN:</strong> Utilized TensorFlow to build and optimize the
-                                    DQN model, allowing the bot to learn the value of various board positions and select
-                                    the best moves through reinforcement learning.</li>
-                                <li><strong>Competitive Performance:</strong> The bot demonstrated strong performance in
-                                    both simulated games and real online matches, consistently outperforming
-                                    less-experienced players and achieving impressive rankings on chess platforms.</li>
-                                <li><strong>User Interface:</strong> Developed a user-friendly interface that enables
-                                    players to challenge the bot at different difficulty levels, ranging from beginner
-                                    to expert, ensuring accessibility for a wide range of users.</li>
-                                <li><strong>Opening Book Integration:</strong> Incorporated a diverse opening book with
-                                    various opening strategies to make the bot's gameplay more realistic and
-                                    unpredictable, improving the bot's playstyle variety.</li>
-                                <li><strong>Continuous Improvement:</strong> Regularly updated the bot's decision-making
-                                    model based on feedback and performance, allowing it to adapt and enhance its
-                                    gameplay tactics over time.</li>
-                                <li><strong>Move Evaluation System:</strong> Designed an efficient system to evaluate
-                                    and score different chess positions, utilizing both heuristic methods and deep
-                                    learning-based approaches to improve move selection accuracy.</li>
-                                <li><strong>Scalability:</strong> Built the bot's architecture to be scalable, with the
-                                    potential for future improvements such as the integration of more advanced deep
-                                    learning models or additional chess engines.</li>
-                                <li><strong>Performance Analysis:</strong> Conducted detailed performance analysis after
-                                    each game, tracking win/loss rates, move choices, and overall strategy efficiency to
+            </div>
+            <!-- Project Details -->
+            <div class="accordion" id="chessBotAccordion">
+                <div class="accordion-item bg-dark text-light border-0 shadow-lg rounded-3 mb-3">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button
+                            class="accordion-button bg-dark text-light d-flex justify-content-between align-items-center text-start"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse2Three"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-chess fs-5 me-3 icon-color-1"></i>
+                                <div class="text-start">
+                                    <h5 class="mb-0">AI-Based Chess Bot</h5>
+                                    <small>Lead Developer | Python, Q-learning, Deep Q-Networks (DQN), Monte Carlo Tree
+                                        Search (MCTS)</small>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse2Three" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#chessBotAccordion">
+                        <div class="accordion-body bg-dark text-light">
+                            <p>Developed an AI-powered chess bot that utilizes reinforcement learning techniques such as
+                                Q-learning and Deep Q-Networks (DQN) to learn and improve its gameplay. The bot also
+                                incorporates Monte Carlo Tree Search (MCTS) to evaluate and select optimal moves. It
+                                continuously adapts to opponents, making it highly competitive on online chess
+                                platforms.</p>
+
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Reinforcement Learning
+                                        Implementation:</strong> Developed a chess bot that learns through Q-learning
+                                    and Deep Q-Networks (DQN), enabling it to improve its strategies over time by
+                                    evaluating past gameplay experiences.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Monte Carlo Tree Search
+                                        (MCTS):</strong> Implemented MCTS for advanced move evaluation, allowing the bot
+                                    to plan multiple moves ahead and make strategic decisions based on potential future
+                                    outcomes.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Expert-Level
+                                        Training:</strong> Trained the bot on a comprehensive dataset of expert-level
+                                    chess games, enabling it to identify and replicate high-level strategies and tactics
+                                    used by top players.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>TensorFlow for DQN:</strong>
+                                    Utilized TensorFlow to build and optimize the DQN model, allowing the bot to learn
+                                    the value of various board positions and select the best moves through reinforcement
+                                    learning.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Competitive
+                                        Performance:</strong> The bot demonstrated strong performance in both simulated
+                                    games and real online matches, consistently outperforming less-experienced players
+                                    and achieving impressive rankings on chess platforms.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>User Interface:</strong>
+                                    Developed a user-friendly interface that enables players to challenge the bot at
+                                    different difficulty levels, ranging from beginner to expert, ensuring accessibility
+                                    for a wide range of users.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Opening Book
+                                        Integration:</strong> Incorporated a diverse opening book with various opening
+                                    strategies to make the bot's gameplay more realistic and unpredictable, improving
+                                    the bot's playstyle variety.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Continuous
+                                        Improvement:</strong> Regularly updated the bot's decision-making model based on
+                                    feedback and performance, allowing it to adapt and enhance its gameplay tactics over
+                                    time.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Move Evaluation
+                                        System:</strong> Designed an efficient system to evaluate and score different
+                                    chess positions, utilizing both heuristic methods and deep learning-based approaches
+                                    to improve move selection accuracy.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Scalability:</strong> Built
+                                    the bot's architecture to be scalable, with the potential for future improvements
+                                    such as the integration of more advanced deep learning models or additional chess
+                                    engines.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Performance
+                                        Analysis:</strong> Conducted detailed performance analysis after each game,
+                                    tracking win/loss rates, move choices, and overall strategy efficiency to
                                     continuously optimize gameplay tactics.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
-                <div class="row mb-4"> <!-- Adds space after this row -->
-                    <!-- Add more cards here as needed -->
-                </div>
-                <div class="container">
-                    <!-- Row 1 -->
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card bg-dark text-light h-100 d-flex flex-column">
-                                <div class="card-body d-flex flex-column  d-flex flex-column justify-content-between">
-                                    <h5 class="card-title">ASICoin – Blockchain-Based Cryptocurrency</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Lead Developer | Blockchain, AI,
-                                        Post-Quantum
-                                        Cryptography</h6>
-                                    <p class="card-text">ASICoin is a blockchain-based cryptocurrency project still
-                                        under
-                                        development. The project aims to integrate AI-driven fraud detection and
-                                        post-quantum
-                                        cryptographic security to ensure the future-proof nature of the network.
-                                        Additionally,
-                                        dApps for mobile banking, file transfers, and educational record management are
-                                        in the
-                                        planning stages.</p>
-                                    <ul class="mt-auto">
-                                        <li>Currently developing an AI-enhanced fraud detection system using machine
-                                            learning
-                                            algorithms for transaction monitoring and anomaly detection.</li>
-                                        <li>Researching and testing post-quantum cryptography algorithms, such as
-                                            lattice-based
-                                            encryption, to prepare for the potential risks posed by quantum computing.
-                                        </li>
-                                        <li>Planning the implementation of decentralized applications (dApps) focused on
-                                            mobile
-                                            banking for secure financial transactions, file transfers for privacy, and
-                                            educational record management for decentralized credential verification.
-                                        </li>
-                                        <li>Designing a decentralized governance model through smart contracts, ensuring
-                                            fairness and transparency in decision-making for the cryptocurrency
-                                            ecosystem.</li>
-                                        <li>Exploring integration with Layer 2 solutions to improve scalability and
-                                            transaction
-                                            throughput, targeting high-speed, real-time transaction capabilities.</li>
-                                        <li>Ongoing collaboration with blockchain experts to fine-tune the consensus
-                                            mechanism,
-                                            aiming to reduce centralization and increase network security.</li>
-                                        <li>Contributing to the exploration of innovative cryptographic techniques to
-                                            enhance
-                                            blockchain architecture, aiming for high scalability and security.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card bg-dark text-light h-100 d-flex flex-column">
-                                <div class="card-body d-flex flex-column  d-flex flex-column justify-content-between">
-                                    <h5 class="card-title">Inventory Management Software for Medicine Shop</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Developer | Python, Tkinter, SQL Database
-                                    </h6>
-                                    <p class="card-text">This Inventory Management Software for Medicine Shop is
-                                        designed to streamline the day-to-day operations of managing medicine stock,
-                                        processing sales, and optimizing inventory levels. The system provides real-time
-                                        data insights, automated purchase recommendations, and an intuitive user
-                                        interface to facilitate efficient management of products and sales activities.
-                                    </p>
-                                    <ul class="mt-auto">
-                                        <li>Real-time stock updates that automatically reflect changes when new
-                                            medicines are added or when sales transactions are recorded.</li>
-                                        <li>Sales tracking with detailed reports for daily, weekly, and monthly sales,
-                                            including profit margins and best-selling medicines.</li>
-                                        <li>Automated medicine reorder alerts based on pre-defined stock thresholds,
-                                            ensuring no medicine runs out of stock unexpectedly.</li>
-                                        <li>Ability to generate barcodes for each medicine, simplifying inventory
-                                            tracking and making stock checks more efficient.</li>
-                                        <li>Integrated supplier management, allowing the user to track suppliers'
-                                            contact information and purchase history, improving procurement
-                                            decision-making.</li>
-                                        <li>Expiry date tracking for medicines, which automatically flags and alerts the
-                                            user when a product is nearing its expiration, reducing waste.</li>
-                                        <li>Fully secure, user-friendly interface built with Tkinter, designed to be
-                                            accessible to pharmacy staff without extensive technical knowledge.</li>
-                                        <li>Secure and persistent data storage using SQL database to store inventory
-                                            data, sales history, transaction details, and user profiles, ensuring
-                                            reliability and data integrity.</li>
-                                        <li>Customizable user access control, allowing administrators to define roles
-                                            (e.g., cashier, stock manager) with different access privileges for security
-                                            purposes.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card bg-dark text-light h-100 d-flex flex-column">
-                                <div class="card-body d-flex flex-column  d-flex flex-column justify-content-between">
-                                    <h5 class="card-title">Sudoku Solver</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Lead Developer | C, Backtracking,
-                                        Constraint Propagation</h6>
-                                    <p class="card-text">
-                                        An efficient Sudoku solver leveraging backtracking, recursion, and constraint
-                                        propagation
-                                        to find solutions for 9x9 grids. Optimized for speed and accuracy, ensuring
-                                        compliance
-                                        with Sudoku rules while handling even the most challenging puzzles.
-                                    </p>
-                                    <ul class="mt-auto">
-                                        <li><strong>High Accuracy:</strong> Solves 100% of valid Sudoku puzzles by
-                                            systematically eliminating incorrect possibilities.</li>
-                                        <li><strong>Optimized Speed:</strong> Uses constraint propagation and optimized
-                                            backtracking to reduce search space.</li>
-                                        <li><strong>Advanced Validation:</strong> Detects incorrect or unsolvable
-                                            puzzles before solving to avoid unnecessary computations.</li>
-                                        <li><strong>Constraint Propagation:</strong> Eliminates impossible numbers
-                                            early, reducing recursion depth and improving efficiency.</li>
-                                        <li><strong>Optimized Backtracking:</strong> Selects the most constrained empty
-                                            cell first, reducing trial-and-error steps.</li>
-                                        <li><strong>Handles Extreme Cases:</strong> Solves puzzles with minimal clues
-                                            (e.g., hardest known Sudoku problems).</li>
-                                        <li><strong>Time Complexity:</strong> Average case: O(9^K) (where K is the
-                                            number of empty cells); Optimized with heuristics.</li>
-                                        <li><strong>Space Complexity:</strong> O(81) (fixed for a 9x9 grid), utilizing
-                                            efficient memory allocation.</li>
-                                        <li><strong>Debugging & Logging:</strong> Step-by-step output allows easy
-                                            tracking of decisions made by the solver.</li>
-                                        <li><strong>Instantaneous Solving:</strong> Most puzzles are solved in
-                                            milliseconds, even on low-end hardware.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
-                    <div class="row mb-4"> <!-- Adds space after this row -->
-                        <!-- Add more cards here as needed -->
-                    </div>
-                    <!-- Row 2 -->
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card bg-dark text-light h-100 d-flex flex-column">
-                                <div class="card-body d-flex flex-column  d-flex flex-column justify-content-between">
-                                    <h5 class="card-title">Candlestick Detection Trading Bot</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Lead Developer | Python, LSTM, Ichimoku
-                                        Cloud, Bollinger Bands, Deep Q-Learning</h6>
-                                    <p class="card-text">A cutting-edge AI-driven trading bot designed for real-time
-                                        market analysis and decision-making. This bot leverages deep learning
-                                        techniques, such as LSTM (Long Short-Term Memory) networks, to predict future
-                                        price movements based on historical data. Technical indicators like Ichimoku
-                                        Cloud and Bollinger Bands are integrated to enhance the bot’s ability to perform
-                                        technical analysis and identify trends. Additionally, Deep Q-Learning is
-                                        implemented to allow the bot to adapt and refine its trading strategies
-                                        autonomously by interacting with the market environment.</p>
-                                    <ul class="mt-auto">
-                                        <li>Developed using LSTM for time-series forecasting to predict price movements
-                                            with high accuracy.</li>
-                                        <li>Enhanced analysis with Ichimoku Cloud to identify market trends and
-                                            support/resistance levels.</li>
-                                        <li>Utilized Bollinger Bands to assess market volatility and define entry/exit
-                                            points for trades.</li>
-                                        <li>Optimized the model’s performance through hyperparameter tuning, focusing on
-                                            hidden layer sizes, learning rates, and batch sizes for efficiency.</li>
-                                        <li>Integrated Deep Q-Learning to enable the bot to make intelligent,
-                                            data-driven decisions about buying, holding, or selling based on the current
-                                            market state.</li>
-                                        <li>Backtested strategies using historical market data, validating the bot’s
-                                            ability to yield profit across different market conditions.</li>
-                                        <li>Developed a robust risk management system within the bot to minimize loss
-                                            during highly volatile conditions.</li>
-                                        <li>Integrated real-time market data feeds for continuous trading and
-                                            decision-making with minimal latency.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card bg-dark text-light h-100 d-flex flex-column">
-                                <div class="card-body d-flex flex-column  d-flex flex-column justify-content-between">
-                                    <h5 class="card-title">Sentiment Analysis for Cryptocurrency Price Prediction</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Lead Developer | Python, Natural Language
-                                        Processing, TensorFlow, Keras</h6>
-                                    <p class="card-text">Developed a sentiment analysis module to enhance cryptocurrency
-                                        price prediction models by analyzing real-time news articles, social media
-                                        posts, and public sentiment. Integrated sentiment scores with LSTM-based deep
-                                        learning models to forecast price movements of Ethereum (ETH) based on
-                                        historical Bitcoin (BTC) data.</p>
-                                    <ul class="mt-auto">
-                                        <li>Conducted sentiment analysis on a large corpus of cryptocurrency-related
-                                            news articles, blogs, and tweets using advanced NLP techniques such as BERT
-                                            and VADER.</li>
-                                        <li>Developed a data pipeline to preprocess and extract relevant features,
-                                            including sentiment scores and keywords, from unstructured text data.</li>
-                                        <li>Enhanced price prediction accuracy by integrating sentiment analysis scores
-                                            with traditional technical analysis indicators (e.g., moving averages, RSI,
-                                            MACD).</li>
-                                        <li>Utilized LSTM models to capture temporal dependencies in price movements,
-                                            trained using TensorFlow/Keras on historical BTC data and sentiment-adjusted
-                                            features.</li>
-                                        <li>Achieved significant improvement in the predictive model's performance,
-                                            reducing forecasting errors during major news-driven market shifts.</li>
-                                        <li>Implemented backtesting strategies to evaluate the model’s robustness
-                                            against real-world market data and adjusted parameters for optimized
-                                            results.</li>
-                                        <li>Deployed the model in a live trading environment, where it helped provide
-                                            real-time trading signals based on sentiment-driven market predictions.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card bg-dark text-light h-100 d-flex flex-column">
-                                <div class="card-body d-flex flex-column  d-flex flex-column justify-content-between">
-                                    <h5 class="card-title">Ethereum Price Prediction Using LSTM</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Lead Developer | Python, TensorFlow, LSTM,
-                                        Technical Indicators</h6>
-                                    <p class="card-text">This project uses Long Short-Term Memory (LSTM) networks to
-                                        predict Ethereum (ETH) price trends by analyzing historical Bitcoin (BTC) data.
-                                        It incorporates various technical indicators, including moving averages,
-                                        Relative Strength Index (RSI), and Moving Average Convergence Divergence (MACD),
-                                        to improve forecasting accuracy. Additionally, sentiment analysis is used to
-                                        account for the impact of market news on price movements.</p>
-                                    <ul class="mt-auto">
-                                        <li>Developed an LSTM-based deep learning model to predict the future price of
-                                            Ethereum using historical price data of Bitcoin, capturing long-term
-                                            dependencies in time-series data.</li>
-                                        <li>Integrated technical indicators such as moving averages, RSI, and MACD into
-                                            the model to enhance the prediction accuracy by incorporating market trend
-                                            data.</li>
-                                        <li>Trained the LSTM model using TensorFlow, optimizing the model using
-                                            hyperparameter tuning and a custom loss function for better price prediction
-                                            accuracy.</li>
-                                        <li>Evaluated model performance using various metrics, including Mean Absolute
-                                            Error (MAE) and Root Mean Squared Error (RMSE), ensuring robust performance
-                                            in both short-term and long-term predictions.</li>
-                                        <li>Implemented a backtesting system to test the performance of the model with
-                                            historical data, providing insights into the model's potential in live
-                                            trading conditions.</li>
-                                        <li>Leveraged data preprocessing techniques, such as normalization and
-                                            rolling-window analysis, to improve model stability and prediction accuracy.
-                                        </li>
-                                        <li>Achieved strong results with the model, demonstrating its ability to predict
-                                            price movements based on past trends, market sentiment, and technical
-                                            analysis.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mb-4"> <!-- Adds space after this row -->
-                            <!-- Add more cards here as needed -->
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card bg-dark text-light h-100 d-flex flex-column">
-                                <div class="card-body d-flex flex-column  d-flex flex-column justify-content-between">
-                                    <h5 class="card-title">Employee Management System</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Project Lead | Python, Django, MySQL,
-                                        HTML, CSS, JavaScript</h6>
-                                    <p class="card-text">The Employee Management System is a comprehensive solution for
-                                        managing employee data, payroll, attendance, and performance. It provides an
-                                        easy-to-use interface for administrators to manage employee information, track
-                                        attendance, and generate payroll reports, while ensuring data security and
-                                        scalability.</p>
-                                    <ul class="mt-auto">
-                                        <li><strong>Employee Data Management:</strong> Designed a system for managing
-                                            employee details such as personal information, department, job role, and
-                                            contact information, allowing easy storage and retrieval.</li>
-                                        <li><strong>Attendance Tracking:</strong> Integrated an automated attendance
-                                            tracking system, enabling employees to clock in and out while automatically
-                                            recording working hours for payroll calculation.</li>
-                                        <li><strong>Payroll Generation:</strong> Developed a payroll system that
-                                            automatically calculates salaries, bonuses, and deductions based on
-                                            attendance and performance metrics.</li>
-                                        <li><strong>Performance Tracking:</strong> Added a performance review module to
-                                            monitor employee performance, enabling managers to assess productivity and
-                                            provide feedback.</li>
-                                        <li><strong>Role-based Access Control:</strong> Implemented a secure
-                                            authentication system with role-based access control, ensuring that only
-                                            authorized users can access sensitive employee information.</li>
-                                        <li><strong>Real-Time Reporting:</strong> Built real-time reporting features
-                                            that allow HR managers to generate reports on employee attendance, salary,
-                                            and performance, enhancing data-driven decision-making.</li>
-                                        <li><strong>Database Integration:</strong> Used MySQL to design a scalable
-                                            relational database that stores employee records securely, ensuring data
-                                            integrity and reliability.</li>
-                                        <li><strong>User-Friendly Interface:</strong> Developed a web-based interface
-                                            with HTML, CSS, and JavaScript, providing a smooth and intuitive user
-                                            experience for both administrators and employees.</li>
-                                        <li><strong>Employee Self-Service Portal:</strong> Created a self-service portal
-                                            where employees can view their personal information, attendance records, and
-                                            pay slips.</li>
-                                        <li><strong>Notification System:</strong> Integrated email and SMS notifications
-                                            to inform employees of important updates, such as salary payments,
-                                            performance reviews, and company announcements.</li>
-                                        <li><strong>System Scalability:</strong> Ensured the system is scalable,
-                                            allowing for future expansion, such as adding more departments, job roles,
-                                            and custom reporting features.</li>
-                                        <li><strong>Security Features:</strong> Implemented advanced security features,
-                                            including encryption of sensitive data and regular backups, to safeguard
-                                            employee information.</li>
-                                        <li><strong>Integration with HR Software:</strong> Designed the system to be
-                                            easily integrated with existing HR software, allowing seamless data transfer
-                                            and synchronization between systems.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card bg-dark text-light h-100 d-flex flex-column">
-                                <div class="card-body d-flex flex-column  d-flex flex-column justify-content-between">
-                                    <h5 class="card-title">Lending Library Management System</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Project Lead | Python, Django, PostgreSQL,
-                                        HTML, CSS, JavaScript</h6>
-                                    <p class="card-text">The Lending Library Management System is a software solution
-                                        for managing books, patrons, and lending transactions within a library. It
-                                        provides features for checking out and returning books, tracking due dates,
-                                        managing inventory, and generating reports on library activity.</p>
-                                    <ul class="mt-auto">
-                                        <li><strong>Book Inventory Management:</strong> Designed a system to manage
-                                            library inventory, allowing librarians to easily add, update, and delete
-                                            book records, including book title, author, genre, and availability status.
-                                        </li>
-                                        <li><strong>Patron Management:</strong> Created a module for managing patrons,
-                                            including registration, tracking of borrowed books, and updating personal
-                                            information.</li>
-                                        <li><strong>Book Lending & Return:</strong> Developed a feature that allows
-                                            patrons to borrow books for a set period and return them when due, with
-                                            automatic tracking of overdue books and fines.</li>
-                                        <li><strong>Due Date Tracking:</strong> Integrated automatic tracking of book
-                                            due dates, sending notifications to patrons when their books are due for
-                                            return, reducing overdue instances.</li>
-                                        <li><strong>Search & Filtering:</strong> Implemented a search function that
-                                            allows users to quickly find books by title, author, genre, or availability
-                                            status, enhancing user experience.</li>
-                                        <li><strong>Fines Management:</strong> Developed a fine system that
-                                            automatically calculates late fees for overdue books, which can be paid
-                                            online or manually recorded by the librarian.</li>
-                                        <li><strong>User Roles & Permissions:</strong> Implemented role-based access
-                                            control, allowing different levels of access for patrons, librarians, and
-                                            administrators, ensuring data security.</li>
-                                        <li><strong>Report Generation:</strong> Created a reporting feature to generate
-                                            detailed reports on book inventory, borrowing history, overdue books, and
-                                            fines, providing valuable insights for library management.</li>
-                                        <li><strong>Online Catalog Access:</strong> Developed an online catalog that
-                                            allows patrons to browse available books, check availability, and place
-                                            reservations for books that are currently checked out.</li>
-                                        <li><strong>Real-Time Inventory Updates:</strong> Ensured real-time updates of
-                                            the book inventory and patron activity, allowing for accurate tracking of
-                                            available and borrowed books at all times.</li>
-                                        <li><strong>Database Integration:</strong> Used PostgreSQL to design a
-                                            relational database, ensuring data integrity and efficient storage of book
-                                            and patron information.</li>
-                                        <li><strong>Responsive User Interface:</strong> Built a responsive web interface
-                                            using HTML, CSS, and JavaScript, providing an intuitive experience for both
-                                            patrons and librarians across devices.</li>
-                                        <li><strong>Notification System:</strong> Integrated email and SMS notifications
-                                            for book due dates, fine alerts, and new arrivals to keep patrons informed
-                                            of important events.</li>
-                                        <li><strong>Security Features:</strong> Ensured data security through encryption
-                                            and secure login mechanisms for both patrons and librarians.</li>
-                                        <li><strong>System Scalability:</strong> Designed the system to be scalable,
-                                            allowing for future expansion, such as adding new features like book
-                                            recommendations or online reservations.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card bg-dark text-light h-100 d-flex flex-column">
-                                <div class="card-body d-flex flex-column  d-flex flex-column justify-content-between">
-                                    <h5 class="card-title">Ride Sharing Simulation System</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Project Lead | Python, SimPy, Simulation,
-                                        Optimization Algorithms</h6>
-                                    <p class="card-text">The Ride Sharing Simulation System aims to simulate and
-                                        optimize the operation of a ride-sharing network. The system is designed to
-                                        model real-world factors such as traffic conditions, vehicle availability, user
-                                        demand, and route optimization to improve the efficiency and cost-effectiveness
-                                        of ride-sharing services.</p>
-                                    <ul class="mt-auto">
-                                        <li><strong>Demand and Supply Modeling:</strong> Simulated real-world scenarios
-                                            of ride requests and available vehicles, accounting for time, location, and
-                                            user preferences to match riders with drivers.</li>
-                                        <li><strong>Traffic and Route Optimization:</strong> Incorporated traffic
-                                            congestion models and real-time road conditions to optimize routes, reducing
-                                            wait times and travel distances.</li>
-                                        <li><strong>Dynamic Pricing Model:</strong> Developed a dynamic pricing system
-                                            that adjusts fares based on demand, time of day, traffic conditions, and
-                                            other relevant factors to maximize revenue and ensure fairness.</li>
-                                        <li><strong>Vehicle Assignment Algorithm:</strong> Implemented an algorithm to
-                                            match vehicles with riders efficiently, minimizing idle times and ensuring
-                                            that both drivers and passengers are satisfied with the service.</li>
-                                        <li><strong>Simulation Engine:</strong> Built a simulation engine using Python
-                                            and SimPy, allowing users to test different scenarios such as peak hours,
-                                            sudden surges in demand, and varying traffic conditions.</li>
-                                        <li><strong>Real-Time Data Integration:</strong> Integrated real-time data from
-                                            external sources (e.g., traffic reports, weather conditions) to simulate
-                                            real-world scenarios and provide accurate performance metrics.</li>
-                                        <li><strong>Performance Metrics:</strong> Measured key performance indicators
-                                            (KPIs) such as average wait time, ride duration, vehicle utilization, and
-                                            customer satisfaction to assess the system's efficiency.</li>
-                                        <li><strong>System Scalability:</strong> Designed the system to be scalable,
-                                            allowing it to accommodate large-scale simulations with many riders and
-                                            vehicles in diverse geographical areas.</li>
-                                        <li><strong>User Interaction:</strong> Developed a user-friendly interface for
-                                            simulating various scenarios, adjusting parameters like demand, supply,
-                                            traffic conditions, and pricing models to test the system's performance
-                                            under different circumstances.</li>
-                                        <li><strong>Results Visualization:</strong> Provided real-time visualization of
-                                            simulation results, including graphical representations of route
-                                            optimization, demand-supply balance, and pricing changes.</li>
-                                        <li><strong>Optimization Algorithms:</strong> Used optimization techniques, such
-                                            as Genetic Algorithms and Simulated Annealing, to further enhance vehicle
-                                            routing and resource allocation strategies.</li>
-                                        <li><strong>Data Analysis & Reporting:</strong> Included detailed reports that
-                                            summarize simulation results and offer insights into the effectiveness of
-                                            different ride-sharing strategies, helping improve system design and
-                                            decision-making.</li>
-                                        <li><strong>Security & Privacy Considerations:</strong> Ensured the privacy and
-                                            security of user data, including implementing anonymization protocols for
-                                            location and ride details to protect user identities during simulations.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                </div>
-
             </div>
+            <!-- Project Details -->
+            <div class="accordion" id="asicoinAccordion">
+                <div class="accordion-item bg-dark text-light border-0 shadow-lg rounded-3 mb-3">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button
+                            class="accordion-button bg-dark text-light d-flex justify-content-between align-items-center text-start"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse2Four"
+                            aria-expanded="false" aria-controls="collapseFour">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-currency-bitcoin fs-5 me-3 icon-color-1"></i>
+                                <div class="text-start">
+                                    <h5 class="mb-0">ASICoin – Blockchain-Based Cryptocurrency</h5>
+                                    <small>Lead Developer | Blockchain, AI, Post-Quantum Cryptography</small>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse2Four" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#asicoinAccordion">
+                        <div class="accordion-body bg-dark text-light">
+                            <p>ASICoin is a blockchain-based cryptocurrency project still under development. The project
+                                aims to integrate AI-driven fraud detection and post-quantum cryptographic security to
+                                ensure the future-proof nature of the network. Additionally, dApps for mobile banking,
+                                file transfers, and educational record management are in the planning stages.</p>
+
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>AI-Enhanced Fraud
+                                        Detection:</strong> Developing an AI-enhanced fraud detection system using
+                                    machine learning algorithms for transaction monitoring and anomaly detection.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Post-Quantum Cryptography
+                                        Research:</strong> Researching and testing post-quantum cryptography algorithms,
+                                    such as lattice-based encryption, to prepare for the potential risks posed by
+                                    quantum computing.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Decentralized Applications
+                                        (dApps):</strong> Planning the implementation of dApps focused on mobile banking
+                                    for secure financial transactions, file transfers for privacy, and educational
+                                    record management for decentralized credential verification.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Decentralized Governance
+                                        Model:</strong> Designing a decentralized governance model through smart
+                                    contracts, ensuring fairness and transparency in decision-making for the
+                                    cryptocurrency ecosystem.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Layer 2 Solutions:</strong>
+                                    Exploring integration with Layer 2 solutions to improve scalability and transaction
+                                    throughput, targeting high-speed, real-time transaction capabilities.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Collaboration with
+                                        Blockchain Experts:</strong> Ongoing collaboration with blockchain experts to
+                                    fine-tune the consensus mechanism, aiming to reduce centralization and increase
+                                    network security.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Innovative Cryptographic
+                                        Techniques:</strong> Contributing to the exploration of innovative cryptographic
+                                    techniques to enhance blockchain architecture, aiming for high scalability and
+                                    security.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Details -->
+            <div class="accordion" id="inventoryAccordion">
+                <div class="accordion-item bg-dark text-light border-0 shadow-lg rounded-3 mb-3">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button
+                            class="accordion-button bg-dark text-light d-flex justify-content-between align-items-center text-start"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse2Five"
+                            aria-expanded="false" aria-controls="collapseFive">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-house-door fs-5 me-3 icon-color-1"></i>
+                                <div class="text-start">
+                                    <h5 class="mb-0">Inventory Management Software for Medicine Shop</h5>
+                                    <small>Developer | Python, Tkinter, SQL Database</small>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse2Five" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#inventoryAccordion">
+                        <div class="accordion-body bg-dark text-light">
+                            <p>This Inventory Management Software for Medicine Shop is designed to streamline the
+                                day-to-day operations of managing medicine stock, processing sales, and optimizing
+                                inventory levels. The system provides real-time data insights, automated purchase
+                                recommendations, and an intuitive user interface to facilitate efficient management of
+                                products and sales activities.</p>
+
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Real-Time Stock
+                                        Updates:</strong> Stock updates automatically reflect changes when new medicines
+                                    are added or when sales transactions are recorded.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Sales Tracking:</strong>
+                                    Detailed reports for daily, weekly, and monthly sales, including profit margins and
+                                    best-selling medicines.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Automated Medicine Reorder
+                                        Alerts:</strong> Alerts based on pre-defined stock thresholds, ensuring no
+                                    medicine runs out of stock unexpectedly.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Barcode Generation:</strong>
+                                    Ability to generate barcodes for each medicine, simplifying inventory tracking and
+                                    making stock checks more efficient.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Supplier
+                                        Management:</strong> Integrated supplier management for tracking suppliers'
+                                    contact information and purchase history, improving procurement decision-making.
+                                </li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Expiry Date
+                                        Tracking:</strong> Automatically flags and alerts the user when a product is
+                                    nearing its expiration, reducing waste.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>User-Friendly
+                                        Interface:</strong> A fully secure and user-friendly interface built with
+                                    Tkinter, designed for accessibility by pharmacy staff without technical expertise.
+                                </li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Secure Data
+                                        Storage:</strong> Persistent data storage using an SQL database to store
+                                    inventory data, sales history, transaction details, and user profiles, ensuring
+                                    reliability and data integrity.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Customizable User Access
+                                        Control:</strong> Allows administrators to define roles (e.g., cashier, stock
+                                    manager) with different access privileges for security purposes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Details -->
+            <div class="accordion" id="sudokuAccordion">
+                <div class="accordion-item bg-dark text-light border-0 shadow-lg rounded-3 mb-3">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button
+                            class="accordion-button bg-dark text-light d-flex justify-content-between align-items-center text-start"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse2Six" aria-expanded="false"
+                            aria-controls="collapseSix">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-puzzle fs-5 me-3 icon-color-1"></i>
+                                <div class="text-start">
+                                    <h5 class="mb-0">Sudoku Solver</h5>
+                                    <small>Lead Developer | C, Backtracking, Constraint Propagation</small>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse2Six" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#sudokuAccordion">
+                        <div class="accordion-body bg-dark text-light">
+                            <p>An efficient Sudoku solver leveraging backtracking, recursion, and constraint propagation
+                                to find solutions for 9x9 grids. Optimized for speed and accuracy, ensuring compliance
+                                with Sudoku rules while handling even the most challenging puzzles.</p>
+
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>High Accuracy:</strong>
+                                    Solves 100% of valid Sudoku puzzles by systematically eliminating incorrect
+                                    possibilities.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Optimized Speed:</strong>
+                                    Uses constraint propagation and optimized backtracking to reduce the search space.
+                                </li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Advanced
+                                        Validation:</strong> Detects incorrect or unsolvable puzzles before solving to
+                                    avoid unnecessary computations.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Constraint
+                                        Propagation:</strong> Eliminates impossible numbers early, reducing recursion
+                                    depth and improving efficiency.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Optimized
+                                        Backtracking:</strong> Selects the most constrained empty cell first, reducing
+                                    trial-and-error steps.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Handles Extreme
+                                        Cases:</strong> Solves puzzles with minimal clues (e.g., hardest known Sudoku
+                                    problems).</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Time Complexity:</strong>
+                                    Average case: O(9^K) (where K is the number of empty cells); optimized with
+                                    heuristics.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Space Complexity:</strong>
+                                    O(81) (fixed for a 9x9 grid), utilizing efficient memory allocation.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Debugging &
+                                        Logging:</strong> Step-by-step output allows easy tracking of decisions made by
+                                    the solver.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Instantaneous
+                                        Solving:</strong> Most puzzles are solved in milliseconds, even on low-end
+                                    hardware.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Details -->
+            <div class="accordion" id="tradingBotAccordion">
+                <div class="accordion-item bg-dark text-light border-0 shadow-lg rounded-3 mb-3">
+                    <h2 class="accordion-header" id="headingSeven">
+                        <button
+                            class="accordion-button bg-dark text-light d-flex justify-content-between align-items-center text-start"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse2Seven"
+                            aria-expanded="false" aria-controls="collapseSeven">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-currency-bitcoin fs-5 me-3 icon-color-1"></i>
+                                <div class="text-start">
+                                    <h5 class="mb-0">Candlestick Detection Trading Bot</h5>
+                                    <small>Lead Developer | Python, LSTM, Ichimoku Cloud, Bollinger Bands, Deep
+                                        Q-Learning</small>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse2Seven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                        data-bs-parent="#tradingBotAccordion">
+                        <div class="accordion-body bg-dark text-light">
+                            <p>A cutting-edge AI-driven trading bot designed for real-time market analysis and
+                                decision-making. This bot leverages deep learning techniques, such as LSTM (Long
+                                Short-Term Memory) networks, to predict future price movements based on historical data.
+                                Technical indicators like Ichimoku Cloud and Bollinger Bands are integrated to enhance
+                                the bot’s ability to perform technical analysis and identify trends. Additionally, Deep
+                                Q-Learning is implemented to allow the bot to adapt and refine its trading strategies
+                                autonomously by interacting with the market environment.</p>
+
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>LSTM for Time-Series
+                                        Forecasting:</strong> Predicts price movements with high accuracy.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Ichimoku Cloud
+                                        Analysis:</strong> Identifies market trends and support/resistance levels.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Bollinger Bands
+                                        Integration:</strong> Assesses market volatility and defines entry/exit points.
+                                </li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Hyperparameter
+                                        Tuning:</strong> Optimized the model’s performance focusing on hidden layer
+                                    sizes, learning rates, and batch sizes.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Deep Q-Learning
+                                        Integration:</strong> Enables the bot to make intelligent, data-driven decisions
+                                    about buying, holding, or selling.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Backtesting
+                                        Strategies:</strong> Validated the bot’s ability to yield profit across
+                                    different market conditions using historical data.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Robust Risk
+                                        Management:</strong> Developed a risk management system to minimize loss during
+                                    highly volatile conditions.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Real-Time Data
+                                        Feeds:</strong> Integrated continuous trading and decision-making with minimal
+                                    latency.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Details -->
+            <div class="accordion" id="sentimentAnalysisAccordion">
+                <div class="accordion-item bg-dark text-light border-0 shadow-lg rounded-3 mb-3">
+                    <h2 class="accordion-header" id="headingEight">
+                        <button
+                            class="accordion-button bg-dark text-light d-flex justify-content-between align-items-center text-start"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse2Eight"
+                            aria-expanded="false" aria-controls="collapseEight">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-bar-chart-line fs-5 me-3 icon-color-1"></i>
+                                <div class="text-start">
+                                    <h5 class="mb-0">Sentiment Analysis for Cryptocurrency Price Prediction</h5>
+                                    <small>Lead Developer | Python, Natural Language Processing, TensorFlow,
+                                        Keras</small>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse2Eight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                        data-bs-parent="#sentimentAnalysisAccordion">
+                        <div class="accordion-body bg-dark text-light">
+                            <p>Developed a sentiment analysis module to enhance cryptocurrency price prediction models
+                                by analyzing real-time news articles, social media posts, and public sentiment.
+                                Integrated sentiment scores with LSTM-based deep learning models to forecast price
+                                movements of Ethereum (ETH) based on historical Bitcoin (BTC) data.</p>
+
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Sentiment Analysis on
+                                        Cryptocurrency News:</strong> Used NLP techniques such as BERT and VADER to
+                                    analyze news articles, blogs, and tweets related to cryptocurrency.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Data Pipeline
+                                        Development:</strong> Built a pipeline to preprocess and extract relevant
+                                    features, including sentiment scores and keywords, from unstructured text data.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Integration with Technical
+                                        Analysis:</strong> Combined sentiment analysis scores with traditional
+                                    indicators like moving averages, RSI, and MACD for enhanced price prediction
+                                    accuracy.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>LSTM Model for Temporal
+                                        Dependencies:</strong> Employed LSTM models to capture price movement patterns
+                                    over time, trained using TensorFlow/Keras on historical BTC data and
+                                    sentiment-adjusted features.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Improved
+                                        Performance:</strong> Achieved a significant reduction in forecasting errors
+                                    during major news-driven market shifts by integrating sentiment-driven features.
+                                </li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Backtesting
+                                        Strategies:</strong> Implemented robust backtesting strategies to evaluate the
+                                    model’s performance on real-world market data and fine-tuned parameters for optimal
+                                    results.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Live Trading
+                                        Deployment:</strong> Deployed the model in a live trading environment to provide
+                                    real-time trading signals based on sentiment-driven market predictions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Details -->
+            <div class="accordion" id="ethPricePredictionAccordion">
+                <div class="accordion-item bg-dark text-light border-0 shadow-lg rounded-3 mb-3">
+                    <h2 class="accordion-header" id="headingNine">
+                        <button
+                            class="accordion-button bg-dark text-light d-flex justify-content-between align-items-center text-start"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse2Nine"
+                            aria-expanded="false" aria-controls="collapseNine">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-bar-chart-line fs-5 me-3 icon-color-1"></i>
+                                <div class="text-start">
+                                    <h5 class="mb-0">Ethereum Price Prediction Using LSTM</h5>
+                                    <small>Lead Developer | Python, TensorFlow, LSTM, Technical Indicators</small>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse2Nine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                        data-bs-parent="#ethPricePredictionAccordion">
+                        <div class="accordion-body bg-dark text-light">
+                            <p>This project uses Long Short-Term Memory (LSTM) networks to predict Ethereum (ETH) price
+                                trends by analyzing historical Bitcoin (BTC) data. It incorporates various technical
+                                indicators, including moving averages, Relative Strength Index (RSI), and Moving Average
+                                Convergence Divergence (MACD), to improve forecasting accuracy. Additionally, sentiment
+                                analysis is used to account for the impact of market news on price movements.</p>
+
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>LSTM-Based Deep Learning
+                                        Model:</strong> Developed an LSTM model to predict Ethereum’s price movements by
+                                    analyzing historical Bitcoin price data, capturing long-term dependencies in
+                                    time-series data.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Integration of Technical
+                                        Indicators:</strong> Incorporated key technical indicators such as moving
+                                    averages, RSI, and MACD to enhance prediction accuracy by reflecting market trends
+                                    and volatility.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Model Optimization:</strong>
+                                    Trained the LSTM model using TensorFlow, fine-tuning hyperparameters and customizing
+                                    the loss function to improve prediction performance.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Model Evaluation:</strong>
+                                    Evaluated model performance using metrics like Mean Absolute Error (MAE) and Root
+                                    Mean Squared Error (RMSE) to ensure the accuracy of short-term and long-term
+                                    predictions.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Backtesting System:</strong>
+                                    Implemented a backtesting system to evaluate the model's potential in live trading
+                                    conditions, using historical data for validation.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Data Preprocessing
+                                        Techniques:</strong> Applied normalization and rolling-window analysis to
+                                    enhance the model’s stability and improve the accuracy of predictions.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Performance
+                                        Achievements:</strong> Demonstrated strong performance in predicting price
+                                    movements by combining historical data, technical analysis, and market sentiment.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Details -->
+            <div class="accordion" id="employeeManagementAccordion">
+                <div class="accordion-item bg-dark text-light border-0 shadow-lg rounded-3 mb-3">
+                    <h2 class="accordion-header" id="headingTen">
+                        <button
+                            class="accordion-button bg-dark text-light d-flex justify-content-between align-items-center text-start"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse2Ten" aria-expanded="false"
+                            aria-controls="collapseTen">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-person-circle fs-5 me-3 icon-color-1"></i>
+                                <div class="text-start">
+                                    <h5 class="mb-0">Employee Management System</h5>
+                                    <small>Project Lead | Python, Django, MySQL, HTML, CSS, JavaScript</small>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse2Ten" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                        data-bs-parent="#employeeManagementAccordion">
+                        <div class="accordion-body bg-dark text-light">
+                            <p>The Employee Management System is a comprehensive solution for managing employee data,
+                                payroll, attendance, and performance. It provides an easy-to-use interface for
+                                administrators to manage employee information, track attendance, and generate payroll
+                                reports, while ensuring data security and scalability.</p>
+
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Employee Data
+                                        Management:</strong> Designed a system for managing employee details such as
+                                    personal information, department, job role, and contact information, allowing easy
+                                    storage and retrieval.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Attendance
+                                        Tracking:</strong> Integrated an automated attendance tracking system, enabling
+                                    employees to clock in and out while automatically recording working hours for
+                                    payroll calculation.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Payroll Generation:</strong>
+                                    Developed a payroll system that automatically calculates salaries, bonuses, and
+                                    deductions based on attendance and performance metrics.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Performance
+                                        Tracking:</strong> Added a performance review module to monitor employee
+                                    performance, enabling managers to assess productivity and provide feedback.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Role-based Access
+                                        Control:</strong> Implemented a secure authentication system with role-based
+                                    access control, ensuring that only authorized users can access sensitive employee
+                                    information.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Real-Time
+                                        Reporting:</strong> Built real-time reporting features that allow HR managers to
+                                    generate reports on employee attendance, salary, and performance, enhancing
+                                    data-driven decision-making.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Database
+                                        Integration:</strong> Used MySQL to design a scalable relational database that
+                                    stores employee records securely, ensuring data integrity and reliability.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>User-Friendly
+                                        Interface:</strong> Developed a web-based interface with HTML, CSS, and
+                                    JavaScript, providing a smooth and intuitive user experience for both administrators
+                                    and employees.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Employee Self-Service
+                                        Portal:</strong> Created a self-service portal where employees can view their
+                                    personal information, attendance records, and pay slips.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Notification
+                                        System:</strong> Integrated email and SMS notifications to inform employees of
+                                    important updates, such as salary payments, performance reviews, and company
+                                    announcements.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>System Scalability:</strong>
+                                    Ensured the system is scalable, allowing for future expansion, such as adding more
+                                    departments, job roles, and custom reporting features.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Security Features:</strong>
+                                    Implemented advanced security features, including encryption of sensitive data and
+                                    regular backups, to safeguard employee information.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Integration with HR
+                                        Software:</strong> Designed the system to be easily integrated with existing HR
+                                    software, allowing seamless data transfer and synchronization between systems.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Details -->
+            <div class="accordion" id="lendingLibraryAccordion">
+                <div class="accordion-item bg-dark text-light border-0 shadow-lg rounded-3 mb-3">
+                    <h2 class="accordion-header" id="headingEleven">
+                        <button
+                            class="accordion-button bg-dark text-light d-flex justify-content-between align-items-center text-start"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse2Eleven"
+                            aria-expanded="false" aria-controls="collapseEleven">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-book fs-5 me-3 icon-color-1"></i>
+                                <div class="text-start">
+                                    <h5 class="mb-0">Lending Library Management System</h5>
+                                    <small>Project Lead | Python, Django, PostgreSQL, HTML, CSS, JavaScript</small>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse2Eleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                        data-bs-parent="#lendingLibraryAccordion">
+                        <div class="accordion-body bg-dark text-light">
+                            <p>The Lending Library Management System is a software solution for managing books, patrons,
+                                and lending transactions within a library. It provides features for checking out and
+                                returning books, tracking due dates, managing inventory, and generating reports on
+                                library activity.</p>
+
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Book Inventory
+                                        Management:</strong> Designed a system to manage library inventory, allowing
+                                    librarians to easily add, update, and delete book records, including book title,
+                                    author, genre, and availability status.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Patron Management:</strong>
+                                    Created a module for managing patrons, including registration, tracking of borrowed
+                                    books, and updating personal information.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Book Lending &
+                                        Return:</strong> Developed a feature that allows patrons to borrow books for a
+                                    set period and return them when due, with automatic tracking of overdue books and
+                                    fines.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Due Date Tracking:</strong>
+                                    Integrated automatic tracking of book due dates, sending notifications to patrons
+                                    when their books are due for return, reducing overdue instances.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Search & Filtering:</strong>
+                                    Implemented a search function that allows users to quickly find books by title,
+                                    author, genre, or availability status, enhancing user experience.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Fines Management:</strong>
+                                    Developed a fine system that automatically calculates late fees for overdue books,
+                                    which can be paid online or manually recorded by the librarian.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>User Roles &
+                                        Permissions:</strong> Implemented role-based access control, allowing different
+                                    levels of access for patrons, librarians, and administrators, ensuring data
+                                    security.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Report Generation:</strong>
+                                    Created a reporting feature to generate detailed reports on book inventory,
+                                    borrowing history, overdue books, and fines, providing valuable insights for library
+                                    management.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Online Catalog
+                                        Access:</strong> Developed an online catalog that allows patrons to browse
+                                    available books, check availability, and place reservations for books that are
+                                    currently checked out.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Real-Time Inventory
+                                        Updates:</strong> Ensured real-time updates of the book inventory and patron
+                                    activity, allowing for accurate tracking of available and borrowed books at all
+                                    times.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Database
+                                        Integration:</strong> Used PostgreSQL to design a relational database, ensuring
+                                    data integrity and efficient storage of book and patron information.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Responsive User
+                                        Interface:</strong> Built a responsive web interface using HTML, CSS, and
+                                    JavaScript, providing an intuitive experience for both patrons and librarians across
+                                    devices.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Notification
+                                        System:</strong> Integrated email and SMS notifications for book due dates, fine
+                                    alerts, and new arrivals to keep patrons informed of important events.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Security Features:</strong>
+                                    Ensured data security through encryption and secure login mechanisms for both
+                                    patrons and librarians.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>System Scalability:</strong>
+                                    Designed the system to be scalable, allowing for future expansion, such as adding
+                                    new features like book recommendations or online reservations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Details -->
+            <div class="accordion" id="rideSharingAccordion">
+                <div class="accordion-item bg-dark text-light border-0 shadow-lg rounded-3 mb-3">
+                    <h2 class="accordion-header" id="headingTwelve">
+                        <button
+                            class="accordion-button bg-dark text-light d-flex justify-content-between align-items-center text-start"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse2Twelve"
+                            aria-expanded="false" aria-controls="collapseTwelve">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-car-front fs-5 me-3 icon-color-1"></i>
+                                <div class="text-start">
+                                    <h5 class="mb-0">Ride Sharing Simulation System</h5>
+                                    <small>Project Lead | Python, SimPy, Simulation, Optimization Algorithms</small>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse2Twelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
+                        data-bs-parent="#rideSharingAccordion">
+                        <div class="accordion-body bg-dark text-light">
+                            <p>The Ride Sharing Simulation System aims to simulate and optimize the operation of a
+                                ride-sharing network. The system is designed to model real-world factors such as traffic
+                                conditions, vehicle availability, user demand, and route optimization to improve the
+                                efficiency and cost-effectiveness of ride-sharing services.</p>
+
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Demand and Supply
+                                        Modeling:</strong> Simulated real-world scenarios of ride requests and available
+                                    vehicles, accounting for time, location, and user preferences to match riders with
+                                    drivers.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Traffic and Route
+                                        Optimization:</strong> Incorporated traffic congestion models and real-time road
+                                    conditions to optimize routes, reducing wait times and travel distances.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Dynamic Pricing
+                                        Model:</strong> Developed a dynamic pricing system that adjusts fares based on
+                                    demand, time of day, traffic conditions, and other relevant factors to maximize
+                                    revenue and ensure fairness.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Vehicle Assignment
+                                        Algorithm:</strong> Implemented an algorithm to match vehicles with riders
+                                    efficiently, minimizing idle times and ensuring that both drivers and passengers are
+                                    satisfied with the service.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Simulation Engine:</strong>
+                                    Built a simulation engine using Python and SimPy, allowing users to test different
+                                    scenarios such as peak hours, sudden surges in demand, and varying traffic
+                                    conditions.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Real-Time Data
+                                        Integration:</strong> Integrated real-time data from external sources (e.g.,
+                                    traffic reports, weather conditions) to simulate real-world scenarios and provide
+                                    accurate performance metrics.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Performance
+                                        Metrics:</strong> Measured key performance indicators (KPIs) such as average
+                                    wait time, ride duration, vehicle utilization, and customer satisfaction to assess
+                                    the system's efficiency.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>System Scalability:</strong>
+                                    Designed the system to be scalable, allowing it to accommodate large-scale
+                                    simulations with many riders and vehicles in diverse geographical areas.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>User Interaction:</strong>
+                                    Developed a user-friendly interface for simulating various scenarios, adjusting
+                                    parameters like demand, supply, traffic conditions, and pricing models to test the
+                                    system's performance under different circumstances.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Results
+                                        Visualization:</strong> Provided real-time visualization of simulation results,
+                                    including graphical representations of route optimization, demand-supply balance,
+                                    and pricing changes.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Optimization
+                                        Algorithms:</strong> Used optimization techniques, such as Genetic Algorithms
+                                    and Simulated Annealing, to further enhance vehicle routing and resource allocation
+                                    strategies.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Data Analysis &
+                                        Reporting:</strong> Included detailed reports that summarize simulation results
+                                    and offer insights into the effectiveness of different ride-sharing strategies,
+                                    helping improve system design and decision-making.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> <strong>Security & Privacy
+                                        Considerations:</strong> Ensured the privacy and security of user data,
+                                    including implementing anonymization protocols for location and ride details to
+                                    protect user identities during simulations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Ride Sharing Simulation System Section -->
+
         </div>
     </section>
+
 
     <!-- Skills Section -->
     <section id="skills" class="py-5">
@@ -997,7 +1214,7 @@
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <div class="container">
-            <p>&copy; 2025 Asif Hasan. No Rights Reserved, Just Use it !!</p>
+            <p>&copy; I made it with the help of chatgpt & deepseek. So if you like it, copy it !!</p>
         </div>
     </footer>
 
