@@ -266,16 +266,17 @@ section {
   font-weight: bold;
 }
 
+.highlight-text.researcher {
+  color: #f90000;
+  /* Medium Sea Green */
+}
+
 /* Define colors for each word */
 .highlight-text.engineer {
-  color: #f90000;
+  color: #009342;
   /* Tomato Red */
 }
 
-.highlight-text.researcher {
-  color: #009342;
-  /* Medium Sea Green */
-}
 
 .highlight-text.developer {
   color: #0f58a1;
