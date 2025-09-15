@@ -28,7 +28,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 let stars = [];
-const numStars = 500;
+let numStars = 500;
 
 // Function to generate a soft cosmic color
 function getRandomColor() {
@@ -104,32 +104,31 @@ function animateStars() {
 
     drawNebula();
 
-    for (let i = 0; i < stars.length; i++) {
-        let star = stars[i];
-
-        star.z -= star.speed;
-        if (star.z <= 0) {
+    for (let star of stars) {
+        star.z += star.speed; // move inward
+    
+        if (star.z > canvas.width) {
+            // Reset star to outside
             star.x = Math.random() * canvas.width;
             star.y = Math.random() * canvas.height;
-            star.z = canvas.width;
+            star.z = 1;
             star.speed = Math.random() * 2 + 0.5;
             star.size = Math.random() * 3 + 0.5;
             star.color = getRandomColor();
         }
-
-        let scale = 300 / star.z;
+    
+        let scale = 300 / star.z; // now they shrink as they approach center
         let starX = (star.x - canvas.width / 2) * scale + canvas.width / 2;
         let starY = (star.y - canvas.height / 2) * scale + canvas.height / 2;
         let size = Math.max(0.5, scale * star.size);
-
-        ctx.shadowBlur = 10;
+    
+        ctx.shadowBlur = Math.min(15, size * 3);
         ctx.shadowColor = star.color;
         ctx.fillStyle = star.color;
         ctx.beginPath();
         ctx.arc(starX, starY, size, 0, Math.PI * 2);
         ctx.fill();
     }
-
     requestAnimationFrame(animateStars);
 }
 
@@ -155,3 +154,4 @@ window.addEventListener("resize", () => {
 // Start animations
 animateStars();
 changeNebulaColor();
+
